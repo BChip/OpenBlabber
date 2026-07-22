@@ -23,11 +23,11 @@
 </p>
 
 <p align="center">
-  <img src="screenshots/iphone-69-keyboard-dictating.png" width="240" alt="The Open Blabber keyboard transcribing speech live">
+  <img src="screenshots/iphone-69-keyboard-dictating.png" width="240" alt="Open Blabber showing live English transcription and voice activity">
   &nbsp;
-  <img src="screenshots/iphone-69-keyboard-ready.png" width="240" alt="The Open Blabber keyboard ready to dictate">
+  <img src="screenshots/iphone-69-home-light.png" width="240" alt="Open Blabber ready for private English dictation in light mode">
   &nbsp;
-  <img src="screenshots/iphone-69-home-light.png" width="240" alt="The Open Blabber app">
+  <img src="screenshots/iphone-69-home-dark.png" width="240" alt="Open Blabber ready for private English dictation in dark mode">
 </p>
 
 ## What it is
