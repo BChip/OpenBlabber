@@ -3,24 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Open Blabber — fast, private English dictation for iOS</title>
-<meta name="description" content="Open Blabber is a free, open-source English dictation keyboard for iOS. Fast live transcription stays entirely on your device—no servers, model downloads, accounts, or tracking.">
+<title>Open Blabber: fast, private English dictation for iOS</title>
+<meta name="description" content="Open Blabber is a free, open-source English dictation keyboard for iOS. It uses a bundled Moonshine model to transcribe live on your device. The app does not send speech to a server or track its users.">
 <link rel="canonical" href="https://openblabber.com/">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Open Blabber">
-<meta property="og:title" content="Open Blabber — fast, private English dictation for iOS">
-<meta property="og:description" content="A free, open-source English dictation keyboard with live Moonshine transcription entirely on your device. No servers, model downloads, accounts, or tracking.">
+<meta property="og:title" content="Open Blabber: fast, private English dictation for iOS">
+<meta property="og:description" content="Open Blabber uses a bundled Moonshine model for live English dictation on your device. Speech stays local, and there is no first-use model download.">
 <meta property="og:url" content="https://openblabber.com/">
 <meta property="og:image" content="https://openblabber.com/icon-1024.png">
 <meta property="og:image:width" content="1024">
 <meta property="og:image:height" content="1024">
 <meta property="og:image:alt" content="Open Blabber app icon: a white speech waveform on teal">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Open Blabber — fast, private English dictation for iOS">
-<meta name="twitter:description" content="A free, open-source English dictation keyboard with fast, live Moonshine transcription entirely on your device.">
+<meta name="twitter:title" content="Open Blabber: fast, private English dictation for iOS">
+<meta name="twitter:description" content="Live English dictation on your iPhone or iPad using a bundled, on-device Moonshine model.">
 <meta name="twitter:image" content="https://openblabber.com/icon-1024.png">
 <style>
   :root {
@@ -108,7 +108,7 @@
 <header>
   <img class="logo" src="icon-1024.png" alt="Open Blabber app icon" width="96" height="96">
   <h1>Open Blabber</h1>
-  <p class="tagline">A free, open-source English dictation keyboard for iPhone and iPad. Speak anywhere you can type — transcribed live, entirely on your device.</p>
+  <p class="tagline">A free, open-source English dictation keyboard for iPhone and iPad. Speak anywhere you can type, with live transcription on your device.</p>
   <a class="gh" href="https://github.com/BChip/OpenBlabber" aria-label="Open Blabber source code on GitHub" title="View the source on GitHub">
     <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
       <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
@@ -119,26 +119,48 @@
 <main>
   <div class="features">
     <div class="feature">
-      <strong>Private by design</strong>
-      <span>Your voice, transcripts, and typed text never leave your device. The model is bundled, with no server or runtime model download.</span>
+      <strong>Audio stays local</strong>
+      <span>Your audio stays on your device. The model comes with the app, so transcription does not depend on a server or a later download.</span>
     </div>
     <div class="feature">
-      <strong>English, on purpose</strong>
-      <span>A compact streaming model focused on fast, efficient English dictation. No language picker, subscription, or bloat.</span>
+      <strong>English only</strong>
+      <span>Open Blabber carries one compact model for one job: English dictation.</span>
     </div>
     <div class="feature">
-      <strong>Open source</strong>
-      <span>A focused Swift codebase separates the companion app, lightweight keyboard, and protected local protocol. Licensed under the GPLv3.</span>
+      <strong>Source available</strong>
+      <span>The Swift source for the app, keyboard, and local handoff is public and licensed under GPLv3.</span>
     </div>
   </div>
 
   <h2>How it works</h2>
   <ol>
     <li>Install Open Blabber and enable the keyboard in <strong>Settings&nbsp;→ General&nbsp;→ Keyboard&nbsp;→ Keyboards</strong>, including <strong>Allow Full Access</strong>.</li>
-    <li>In any app, switch to the Open Blabber keyboard and tap its center button. Because iOS doesn't let keyboards use the microphone, the first tap opens Open Blabber. The local model prepares first and the microphone then starts automatically; use iOS's Back control to return.</li>
-    <li>Tap the center mic, talk, and tap the same button to stop. Live recognized text and a voice-activity animation appear while you speak. Each dictation is capped at two minutes. Leaving or switching the keyboard releases the microphone and unloads the model automatically.</li>
+    <li>In any app, switch to the Open Blabber keyboard and tap its center button. If the engine is not ready, the keyboard opens Open Blabber. The local model prepares before the microphone starts. Use iOS's Back control to return.</li>
+    <li>Tap the center mic, talk, and tap it again to stop. Live text and a voice-activity animation appear while you speak. Each dictation stops at two minutes. Leaving or switching keyboards asks the app to shut down.</li>
   </ol>
-  <p class="muted small">Live transcription is powered by the bundled, open-source Moonshine Tiny Streaming English model. Its roughly 49&nbsp;MB of quantized assets run entirely in the companion app; the keyboard stays lean and receives only bounded text and an activity level.</p>
+  <p class="muted small">The bundled Moonshine Tiny Streaming English model runs in the companion app. The keyboard receives control messages, progress, bounded text, and a normalized activity level, but no audio.</p>
+
+  <hr>
+
+  <section id="design">
+    <h2>Why it is built this way</h2>
+    <p>One way to keep a voice keyboard small is to send recordings to a transcription service. Open Blabber runs transcription on the phone instead. The app takes up more space, but speech stays local and there is no account or API key.</p>
+
+    <p>iOS does not let custom keyboard extensions use the microphone, even with Full Access. Apple does not publish a fixed extension memory limit, but keyboards run under a tight system-managed budget. The seven model files already occupy about 49&nbsp;MiB (51&nbsp;MB) before inference working memory, so the model runs in the companion app.</p>
+
+    <p>The companion app handles the microphone, model, and transcription session. It exchanges commands, state, progress, text, and voice activity with the keyboard through protected App Group files. Audio samples and model objects stay out of the keyboard process.</p>
+
+    <p>Open Blabber includes Moonshine Tiny Streaming for English only. More languages would require more language-specific files or a broader model. Larger English models can perform better on difficult speech, but their model files are bigger. Tiny Streaming keeps the bundled model smaller and updates text as you speak, at the cost of some accuracy and language coverage.</p>
+
+    <h3>Limitations</h3>
+    <ul>
+      <li>On the first dictation, Open Blabber may open while it prepares the model and microphone. iOS cannot silently return to the app you were using, and it may reject the keyboard's launch request. Use the system Back control or app switcher. If the launch fails, open Open Blabber yourself.</li>
+      <li>The orange microphone indicator may stay visible during the return handoff and while the Open Blabber keyboard is present. Switching keyboards requests shutdown immediately. If iOS misses that callback, the heartbeat expires about three seconds later.</li>
+      <li>Open Blabber is for dictation, not ordinary letter-by-letter typing. Switch keyboards when you need a full keyboard.</li>
+      <li>The compact model may mishear names, specialized terms, unclear speech, overlapping speakers, and speech in noisy rooms. Partial text may change as the model hears more context. Review important text before sending it.</li>
+      <li>Each recording stops at two minutes. An interruption, memory pressure, or system termination can also end a session. Local transcription uses the device's processor, memory, and battery. The project does not yet have performance and battery benchmarks for every supported iPhone.</li>
+    </ul>
+  </section>
 
   <hr>
 
@@ -146,34 +168,34 @@
     <h2>Privacy Policy</h2>
     <p class="muted small">Effective date: July 21, 2026</p>
 
-    <p>Open Blabber is built so your voice, transcripts, and typed content never leave your device. This policy explains the small amount of temporary, device-local data needed to pass a result from the app to its keyboard. The English speech model is included in the app, so transcription requires no server or runtime model download.</p>
+    <p>Open Blabber processes audio and text on your device. To move a transcript from the companion app to its keyboard, it briefly stores a small amount of device-local data. The bundled English model does not need a transcription server or a first-use download. Once the keyboard inserts text, the app you are typing in controls what happens to it.</p>
 
-    <h3>What we collect</h3>
-    <p><strong>No voice, transcript, or typed content leaves your device.</strong> Open Blabber has no service backend, user accounts, analytics, crash reporting, or advertising. We do not receive, sell, or share that content. The bundled model means the transcription path makes no network request. If you choose an external website or source-code link, iOS opens that destination outside the transcription path and its own privacy policy applies.</p>
+    <h3>What leaves your device</h3>
+    <p><strong>Open Blabber does not send your voice, transcript, or nearby text to its developer or a transcription service.</strong> It has no backend or user accounts and includes no analytics, crash reporter, or advertising SDK. Transcription makes no network requests. After insertion, the host app handles the text under its own privacy policy. External website and source-code links open outside the transcription path and are governed by the destination's privacy policy.</p>
 
     <h3>Your voice and your text</h3>
     <ul>
-      <li>English transcription happens entirely on your device using the bundled Moonshine Tiny Streaming model, run locally by the open-source Moonshine Voice library. Your audio and transcribed text are never sent to us or to any third party by Open Blabber.</li>
-      <li>When Open Blabber opens, it prepares the local model and then starts the microphone automatically. The microphone remains available during the brief return-to-keyboard handoff and while the Open Blabber keyboard is present; leaving or switching keyboards shuts it down and unloads the model. A short heartbeat watchdog handles cases where iOS terminates the extension without a lifecycle callback.</li>
-      <li>Audio begins flowing to Moonshine only after you tap the keyboard's center mic, is processed as short memory-only chunks, is capped at two minutes per recording, and is never written to disk or logged. Open Blabber does not retain a second recording buffer; the keyboard receives text and a normalized activity level, never audio samples.</li>
-      <li>A finished transcript is placed in a temporary file in the app and keyboard's protected shared container so the keyboard can insert it. The keyboard deletes the file immediately after insertion or discard. An unconsumed result becomes invalid after two minutes and is scrubbed on the next app or keyboard mailbox check. Random request identifiers and short-lived engine state are stored alongside it only to prevent delivery to the wrong field.</li>
-      <li>For safe insertion, the keyboard briefly fingerprints a small amount of immediately surrounding cursor and selection context, and checks the preceding character to add natural spacing. It never writes or retains that context.</li>
+      <li>Moonshine Voice runs the bundled English model on your device. Open Blabber does not send audio or transcription results to us or to another transcription service.</li>
+      <li>When Open Blabber opens, it prepares the model and activates the microphone. The microphone remains available during the return handoff and while the Open Blabber keyboard is present. Switching keyboards requests shutdown immediately. If iOS misses the lifecycle callback, the heartbeat expires about three seconds later.</li>
+      <li>Moonshine receives audio only after you tap the center mic. It processes bounded chunks in memory, and each recording stops at two minutes. Open Blabber never writes or logs audio and does not keep a complete recording. The keyboard receives state, progress, bounded text, and normalized activity instead of audio samples.</li>
+      <li>The app writes a finished transcript to a temporary file in the protected App Group container. It becomes invalid after two minutes. Cleanup removes it after the keyboard handles it, when the session shuts down, after it expires while the app is running, or on the next app launch. If removal cannot finish immediately, later app activity retries it. Random request identifiers and short-lived engine state help prevent delivery to the wrong text field.</li>
+      <li>To avoid inserting a result into the wrong field, the keyboard computes a short fingerprint from nearby cursor and selection context. It also checks the preceding character for natural spacing. The context is used only in memory and is not retained.</li>
     </ul>
 
     <h3>Permissions we ask for, and why</h3>
     <ul>
-      <li><strong>Microphone</strong> — required so the companion app can hear you while you dictate. It starts automatically after the local model is ready, shuts down when the keyboard leaves or the brief return handoff expires, and buffers audio only while you are actively dictating.</li>
-      <li><strong>Allow Full Access</strong> (keyboard setting) — used for protected, device-local coordination between the keyboard and companion app and for receiving a temporary transcription result. The keyboard extension itself contains no networking, microphone, or speech-model code. On current iOS releases, Full Access can also affect whether a keyboard can open its companion app; if that launch is unavailable, you can open Open Blabber manually.</li>
+      <li><strong>Microphone.</strong> The companion app needs microphone access for dictation. It activates the microphone after the model is ready and releases it when the keyboard leaves or the return handoff expires. Audio reaches the model only while you are actively dictating.</li>
+      <li><strong>Allow Full Access.</strong> This lets the keyboard write commands, liveness messages, and result receipts to the shared App Group. Apple also treats Full Access as permission for a keyboard to use networking, but Open Blabber's keyboard contains no networking code and transcription makes no network requests. Full Access does not give the keyboard microphone access. iOS may decline a request to open the companion app, in which case you can open Open Blabber yourself.</li>
     </ul>
 
     <h3>Bundled English model</h3>
-    <p>Open Blabber supports English transcription only. The seven quantized Moonshine Tiny Streaming model assets—roughly 49&nbsp;MB total—ship inside the app, so there is no first-use model download and transcription works offline immediately. The companion app owns the model and microphone; the memory-constrained keyboard extension contains neither. Moonshine Voice and the English model are MIT licensed, while Open Blabber is GPLv3.</p>
+    <p>Open Blabber supports English transcription only. Seven quantized Moonshine Tiny Streaming files, totaling about 49&nbsp;MiB (51&nbsp;MB), ship with the app. Transcription therefore works offline on the first launch. Other languages would require more language-specific files or a broader model. The companion app owns the model and microphone, while the keyboard extension contains neither. Moonshine Voice and the English model use the MIT license. Open Blabber uses GPLv3.</p>
 
     <h3>Changes</h3>
-    <p>If this policy ever changes, the new version will be posted here and in the project's public source repository, with the effective date updated. The app has no account system or telemetry, and any material change to that design will be disclosed here.</p>
+    <p>We will post policy changes here and in the public source repository and update the effective date. Open Blabber currently has no account system or telemetry. If that changes, this policy will say so.</p>
 
     <h3>Contact</h3>
-    <p>Questions? Open an issue on the project repository</p>
+    <p>Questions about this policy can be filed in the <a href="https://github.com/BChip/OpenBlabber/issues">public issue tracker</a>.</p>
   </section>
 
   <hr>
@@ -185,7 +207,7 @@
     <p>By using Open Blabber, you agree to these terms.</p>
 
     <h3>The app</h3>
-    <p>Open Blabber is free software provided in the hope that it is useful. You may use it for any lawful purpose. Transcription accuracy is not guaranteed — always review dictated text before sending anything important.</p>
+    <p>Open Blabber is free software provided in the hope that it is useful. You may use it for any lawful purpose. Transcription accuracy is not guaranteed. Review dictated text before sending anything important.</p>
 
     <h3>Open source license</h3>
     <p>Open Blabber's source code is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License v3.0</a>. You are free to inspect, modify, and redistribute it under the terms of that license, which requires that derivative works remain open source. The Moonshine Voice dependency and bundled English model have their own MIT license.</p>
@@ -201,12 +223,12 @@
 
   <section id="more">
     <h2>More from the maker</h2>
-    <p>🎸 <a href="https://openfret.com"><strong>OpenFret</strong></a> — a free platform for guitarists: track your gear, log your practice, tune up, and learn the fretboard by playing <em>Guitar Quest</em> with your real guitar, right in the browser.</p>
+    <p><a href="https://openfret.com"><strong>OpenFret</strong></a> is a free web app for guitarists. It includes gear and practice tracking, a tuner, and <em>Guitar Quest</em>, which uses your real guitar to teach the fretboard.</p>
   </section>
 </main>
 
 <footer>
-  <p>Open Blabber — fast, private, open-source English dictation.</p>
+  <p>Open Blabber runs private English dictation on your device.</p>
   <p><a href="https://github.com/BChip/OpenBlabber">Source code on GitHub</a> · <a href="#privacy">Privacy Policy</a> · <a href="#terms">Terms of Use</a></p>
 </footer>
 
