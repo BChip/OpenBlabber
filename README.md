@@ -13,7 +13,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-GPLv3-blue.svg" alt="License: GPLv3"></a>
   <img src="https://img.shields.io/badge/platform-iOS%2017%2B-lightgrey.svg" alt="Platform: iOS 17+">
   <img src="https://img.shields.io/badge/swift-5-orange.svg" alt="Swift 5">
-  <a href="https://github.com/sponsors/BChip"><img src="https://img.shields.io/badge/sponsor-%E2%9D%A4-ff69b4.svg" alt="Sponsor"></a>
+  <a href="https://buymeacoffee.com/bchip"><img src="https://img.shields.io/badge/sponsor-%E2%9D%A4-ff69b4.svg" alt="Sponsor"></a>
 </p>
 
 <p align="center">
@@ -94,7 +94,7 @@ Issues and pull requests are welcome. Keep the spirit of the project: minimal, a
 
 ## Support the project
 
-Open Blabber is free and always will be. If it saves you time, you can say thanks by starring the repo or [sponsoring development](https://github.com/sponsors/BChip).
+Open Blabber is free and always will be. If it saves you time, you can say thanks by starring the repo or [buying me a coffee](https://buymeacoffee.com/bchip).
 
 Also by the maker: [OpenFret](https://openfret.com), a free platform for guitarists.
 
